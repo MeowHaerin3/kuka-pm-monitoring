@@ -1,0 +1,52 @@
+{
+    "kuka": {
+        "ip":"192.168.250.11",
+        "port":"250",
+        "assembly_input":101
+    },
+    "influxdb": [
+        
+        {
+            "host": "http://localhost:8086",
+            "token": "qwer1234",
+            "org": "iot-predictive",
+            "database": "kuka-data",
+            "robot_id": "calul_033"
+        }
+    ],
+    "poll_interval_s": 0.1,
+    "assembly_map": [
+        {"name":"X", "addr":"49", "type":"DINT"},
+        {"name":"Y", "addr":"53", "type":"DINT"},
+        {"name":"Z", "addr":"57", "type":"DINT"},
+        {"name":"A", "addr":"61", "type":"DINT"},
+        {"name":"B", "addr":"65", "type":"DINT"},
+        {"name":"C", "addr":"69", "type":"DINT"},
+        {"name":"TEMP_A1", "addr":"77", "type":"DINT"},
+        {"name":"TEMP_A2", "addr":"81", "type":"DINT"},
+        {"name":"TEMP_A3", "addr":"85", "type":"DINT"},
+        {"name":"TEMP_A4", "addr":"89", "type":"DINT"},
+        {"name":"TEMP_A5", "addr":"93", "type":"DINT"},
+        {"name":"TEMP_A6", "addr":"97", "type":"DINT"},
+        {"name":"ROB_RUNTIME", "addr":"73", "type":"DINT"},
+        {"name":"isPick", "addr":"101.0", "type":"BOOL"},
+        {"name":"isPlace", "addr":"101.1", "type":"BOOL"},
+        {"name":"isDriveOn", "addr":"101.2", "type":"BOOL"},
+        {"name":"isError", "addr":"101.3", "type":"BOOL"},
+        {"name":"isMoving", "addr":"101.4", "type":"BOOL"},
+        {"name":"isProgramRunning", "addr":"101.5", "type":"BOOL"},
+        {"name":"override", "addr":"102", "type":"BYTE"},
+        {"name":"acc_a", "addr":"103", "type":"DINT"},
+        {"name":"acc_b", "addr":"107", "type":"DINT"},
+        {"name":"acc_c", "addr":"111", "type":"DINT"},
+        {"name":"acc_x", "addr":"115", "type":"DINT"},
+        {"name":"acc_y", "addr":"119", "type":"DINT"},
+        {"name":"acc_z", "addr":"123", "type":"DINT"},
+        {"name":"vel_a", "addr":"127", "type":"DINT"},
+        {"name":"vel_b", "addr":"131", "type":"DINT"},
+        {"name":"vel_c", "addr":"135", "type":"DINT"},
+        {"name":"vel_x", "addr":"139", "type":"DINT"},
+        {"name":"vel_y", "addr":"143", "type":"DINT"},
+        {"name":"vel_z", "addr":"147", "type":"DINT"} 
+    ]
+}
